@@ -80,6 +80,7 @@ p, h2, h3, h4, h5, h6 {
 
 .color1{
     background: #ECDBBA;
+    color: #191919;
 }
 
 .section-content.color2{
@@ -171,6 +172,7 @@ footer {
     z-index: 99;
     width: 100%;
     height: 50px;
+    margin-top: 50px;
     background: #191919;
 }
 
@@ -190,6 +192,25 @@ footer {
 
 .twocolumns5050 p span{
     font-weight: bold;
+}
+
+.row {
+    padding-top: 20px;
+    display:  flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;;
+}
+    
+.service-cont {
+    width:  49%;
+    color: #ECDBBA;
+    margin-bottom: 20px;
+}
+
+.service-item.text-center {
+    background: #C84B31;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 @media all and (max-width: 980px) {
