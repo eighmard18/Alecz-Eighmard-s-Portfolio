@@ -5,6 +5,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     overflow-x: hidden;
+    margin: 0px;
 }
 
 p, h2, h3, h4, h5, h6 {
@@ -25,7 +26,7 @@ p, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     min-height: 360px;
     max-height: 360px;
-    top: 60px;
+    top: 50px;
     position: fixed;
     z-index: 5 !important;
 }
@@ -174,9 +175,21 @@ footer {
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.twocolumns5050 {
+    display: flex;
+}
+
+.twocolumns5050 p{
+    flex: 0 0 50%;
+}
+
+.twocolumns5050 p span{
+    font-weight: bold;
 }
 
 @media all and (max-width: 980px) {
