@@ -1,0 +1,20 @@
+$ git init
+
+$ git add -A
+
+$ git commit -m "initial commit"
+
+$ git remote add origin https://github.com/eighmard18/Alecz-Eighmard-s-Portfolio.git 
+
+$ git push origin master
+
+------------
+
+$ git add .
+
+$ git commit -m "edit 1"
+
+$ git push origin master
+
+
+
