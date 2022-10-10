@@ -13,6 +13,17 @@ p, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
+.my-icon {   
+    position: fixed;
+    top: 0px;    
+    left: 0px;    
+}
+
+.my-icon img {
+    width: 100px;
+    padding: 10px;
+}
+
 .menu{
     width: 100%;
     bottom: 0;
