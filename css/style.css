@@ -9,7 +9,7 @@ body {
 .body-container {
     color: #888;
     background-color: #F6F7FF;
-    transition: all ease 300ms;
+    transition: 300ms ease ;
 }
 
 p, h2, h3, h4, h5, h6 {
@@ -26,19 +26,21 @@ p, h2, h3, h4, h5, h6 {
 .my-icon img {
     width: 100px;
     padding: 10px;
+    transition: 300ms ease;
 }
 
 .my-icon img.dark {
     display: none;
 }
 
-.menu{
+.menu {
     width: 100%;
     bottom: 0;
     padding: 30px;
+    transition: 300ms ease ;
 }
 
-.menu.float-left{
+.menu.float-left {
     width: 10%;
     color: #FFF;
     background: #ECDBBA;
@@ -95,24 +97,27 @@ p, h2, h3, h4, h5, h6 {
     border-radius: 30px;
 }
 
-.color1{
+.color1,
+.color2 {
     background: #ECDBBA;
     color: #191919;
 }
 
-.color1.dark{
-    background: #ECDBBA !important;
-    color: #191919 !important;
+section.dark , header.dark , button.dark {
+    background: #2D4263 !important;
+    color: #ECDBBA !important;
 }
 
-.section-content.color2{
-    background: #2D4263;
-    color: #ECDBBA;
+.dark .service-item{
+    border: 2px solid #ECDBBA !important;
 }
 
-.section-content.dark{
-    color: #191919 !important;
-    background: #ECDBBA !important;
+.dark .service-item:hover {
+    border: 2px solid #C84B31 !important;
+}
+
+.dark a {
+    border: 2px solid #C84B31 !important;
 }
 
 article.main-content-container .main-content h1 {
@@ -144,6 +149,7 @@ a.mybutton {
 a.mybutton.btn-1 {
     background: #C84B31;
     color: #ECDBBA;
+    border: 2px solid #C84B31;
 }
 
 a.mybutton.btn-2 {
@@ -151,6 +157,7 @@ a.mybutton.btn-2 {
     color: #ECDBBA;
     display: block;
     margin-left: 10px;
+    border: 2px solid #2D4263;
 }
 
 a.mybutton:hover {
@@ -234,7 +241,6 @@ footer {
     
 .service-cont {
     width:  49%;
-    color: #191919;
     margin-bottom: 20px;
 }
 
@@ -270,7 +276,7 @@ footer {
 .slider {
     width: 75px;
     height: 32px;
-    border: 1px solid #2d4263;
+    border: 2px solid #2d4263;
     background-color: #ECDBBA;
     display: block;
     border-radius: 50px;
@@ -297,7 +303,7 @@ footer {
 
 input:checked + .slider {
     background-color: #C84B31;
-    border: 1px solid #ECDBBA;
+    border: 2px solid #ECDBBA;
 }
 
 input:checked + .slider::before {
@@ -305,6 +311,15 @@ input:checked + .slider::before {
     transform: translateX(calc(75px - 24px - 8px));
 }
 /*END SWITCH*/
+
+.service-item {
+    display: flex;
+    align-items:center;
+}
+
+i.fa-solid {
+    font-size: 40px;
+}
 
 @media all and (max-width: 980px) {
     .main-content,
