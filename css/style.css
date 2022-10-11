@@ -27,9 +27,10 @@ p, h2, h3, h4, h5, h6 {
     width: 100px;
     padding: 10px;
     transition: 300ms ease;
+    object-fit: cover;
 }
 
-.my-icon img.dark {
+.my-icon img.dark2 {
     display: none;
 }
 
@@ -166,9 +167,10 @@ a.mybutton:hover {
 }
 
 .pic-container img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .two-columns2080 {
@@ -176,12 +178,12 @@ a.mybutton:hover {
 }
 
 .two-columns2080 .col1 {
-    width: 20%;
+    width: 30%;
 }
 
 .two-columns2080 .col2 {
-    width: 80%;
-    padding-left: 20px;
+    width: 70%;
+    padding-left: 10px;
 }
 
 .section-header:after {
