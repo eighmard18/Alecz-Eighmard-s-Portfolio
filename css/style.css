@@ -34,6 +34,7 @@ p, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+/*MENU*/
 .menu {
     width: 100%;
     bottom: 0;
@@ -55,6 +56,38 @@ p, h2, h3, h4, h5, h6 {
     -webkit-backdrop-filter: blur( 4px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.pic-container2 img{
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+span.menu-name {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+ul.vertical-menu.scrollspy {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.menu ul i.fa-solid {
+    font-size: 16px;
+    padding-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.menu.float-left a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+}
+/*END MENU*/
+
 
 .header-body-seperator {
     width: 75%;

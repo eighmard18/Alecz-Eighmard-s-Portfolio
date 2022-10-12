@@ -16,6 +16,37 @@
 </head>
 
 <body>
+        <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104457607996076");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class = "body-container">
     <div class = "my-icon">
         <img src = "assets/Logo New - PNG.png" class = "light">
@@ -37,18 +68,17 @@
     <article class = "main-content-container">        
         <header class="menu float-left animate__animated animate__slideInLeft" id="header">
             <div class="header-inner d-flex align-items-start flex-column">
-                <a href="index.html"><img src="images/logo.png" alt="Bako Doe" /></a>
-                <a href="index.html" class="site-title dot mt-3">Bako Doe</a>
-                <span class="site-slogan">Web Developer</span>
+                <div class = "pic-container2"><img src="assets/Alecz.png" alt="Bako Doe" /></div>
+                <span class = "menu-name">Alecz Eighmard</span><br>
+                <span class = "site-slogan">Web Developer</span>
                 <nav>
                     <ul class="vertical-menu scrollspy">
-                        <li><a href="#home" class="active"><i class="icon-home"></i>Home</a></li>
-                        <li><a href="#about"><i class="icon-user"></i>About</a></li>
-                        <li><a href="#services"><i class="icon-bulb"></i>Services</a></li>
-                        <li><a href="#resume"><i class="icon-graduation"></i>Resume</a></li>
-                        <li><a href="#works"><i class="icon-grid"></i>Works</a></li>
-                        <li><a href="#blog"><i class="icon-pencil"></i>Blog</a></li>
-                        <li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+                        <li><a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-hands-holding-circle"></i>Services</a></li>
+                        <li><a href="#resume"><i class="fa-solid fa-graduation-cap"></i>Resume</a></li>
+                        <li><a href="#works"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,7 +88,7 @@
             <section class = "main-content color1 animate__animated animate__slideInUp">
                 <div class = "main-diff-content">
                     <h1>
-                        I'm Eighmard 
+                        I'm Alecz Eighmard 
                     </h1>
                     <p>
                         My area of expertise is responsive website strategy, design, and development. I create beautiful, semantic HTML & CSS using skills I learned from self-study. However, my interests go far beyond the web, and I enjoy assisting people with marketing plans and branding.
@@ -153,37 +183,6 @@
             </section>
         </div>
     </article> 
-
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "104457607996076");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <footer>Created using HTML5, CSS3, and JQuery - Copyright 2022</footer>
 </div>
