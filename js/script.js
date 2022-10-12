@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
         if (this.checked) {
             console.log('checked');
             $("section, header, footer, button").addClass("dark");
-            $('.body-container').attr('style', 'background: #454545 !important');
+            $('.body-container').attr('style', 'background: #222C3A !important');
             $(".my-icon img.dark2").show();
             $(".my-icon img.light").hide();
 
