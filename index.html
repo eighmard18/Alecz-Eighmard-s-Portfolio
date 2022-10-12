@@ -32,12 +32,25 @@
         </label>
     </div>
 
-   
+
 
     <article class = "main-content-container">        
         <header class="menu float-left animate__animated animate__slideInLeft" id="header">
-            <div class = "pic-container">
-                <!-- <img src = "assets/logo.png"> -->
+            <div class="header-inner d-flex align-items-start flex-column">
+                <a href="index.html"><img src="images/logo.png" alt="Bako Doe" /></a>
+                <a href="index.html" class="site-title dot mt-3">Bako Doe</a>
+                <span class="site-slogan">Web Developer</span>
+                <nav>
+                    <ul class="vertical-menu scrollspy">
+                        <li><a href="#home" class="active"><i class="icon-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="icon-user"></i>About</a></li>
+                        <li><a href="#services"><i class="icon-bulb"></i>Services</a></li>
+                        <li><a href="#resume"><i class="icon-graduation"></i>Resume</a></li>
+                        <li><a href="#works"><i class="icon-grid"></i>Works</a></li>
+                        <li><a href="#blog"><i class="icon-pencil"></i>Blog</a></li>
+                        <li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
@@ -140,6 +153,37 @@
             </section>
         </div>
     </article> 
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104457607996076");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <footer>Created using HTML5, CSS3, and JQuery - Copyright 2022</footer>
 </div>
