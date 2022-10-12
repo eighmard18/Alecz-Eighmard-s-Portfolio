@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -71,20 +75,31 @@ span.menu-name {
 
 ul.vertical-menu.scrollspy {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .menu ul i.fa-solid {
     font-size: 16px;
-    padding-right: 10px;
+    margin-right: 20px;
     width: 16px;
     height: 16px;
+}
+
+.menu.float-left li:hover{
+    transform: translateX(10px);
+    transition: 600ms ease;
 }
 
 .menu.float-left a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 400;
+    line-height: 2em;
+    transition: 300ms ease;
+}
+
+.menu.float-left .active a {
+    text-shadow: 0px 3px 21px rgba(200,75,49,1);
 }
 /*END MENU*/
 

@@ -14,4 +14,10 @@ jQuery(document).ready(function($) {
             $(".my-icon img.light").show();
         }
     });
+
+    $('.vertical-menu li a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('active')
+        $('.vertical-menu li a').click(function(){
+            $(this).parent().addClass('active').siblings().removeClass('active')    
+        })
+
 });
