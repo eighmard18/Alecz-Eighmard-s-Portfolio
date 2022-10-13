@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/70d221b9fe.js" crossorigin="anonymous"></script>
-    <script type = "text/javascript" src="js/script.js"></script>  
 </head>
 
 <body>
@@ -63,7 +61,7 @@
 
 
     <article class = "main-content-container">        
-        <header class="menu float-left animate__animated animate__slideInLeft" id="header">
+        <header class="menu float-left" id="header" data-aos="fade-right">
             <div class="header-inner d-flex align-items-start flex-column">
                 <div class = "pic-container2"><img src="assets/Alecz.png" alt="Bako Doe" /></div>
                 <span class = "menu-name">Alecz Eighmard</span><br>
@@ -72,8 +70,8 @@
                     <ul class="vertical-menu scrollspy">
                         <li class="active"><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
                         <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
-                        <li><a href="#services"><i class="fa-solid fa-hands-holding-circle"></i>Services</a></li>
-                        <li><a href="#resume"><i class="fa-solid fa-graduation-cap"></i>Resume</a></li>
+                        <li><a href="#skills"><i class="fa-solid fa-graduation-cap"></i>Skills</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-hands-holding-circle"></i>Services</a></li>                        
                         <li><a href="#works"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
                         <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
                     </ul>
@@ -82,7 +80,7 @@
         </header>
 
         <div class = "header-body-seperator">
-            <section class = "main-content color1 animate__animated animate__slideInUp" id = "home">
+            <section class = "main-content color1" id = "home" data-aos="fade-up">
                 <div class = "main-diff-content">
                     <h1>
                         I'm Alecz Eighmard 
@@ -98,7 +96,7 @@
                 </div>
             </section>
 
-            <section class = "section-content color2 animate__animated animate__slideInUp" id = "about">
+            <section class = "section-content" id = "about" data-aos="fade-up">
                 <h3 class = "section-header">About Me</h3>
                 <div class = "spacer40"></div>
                 <div class = "two-columns2080">
@@ -129,7 +127,36 @@
                 </div>
             </section>
 
-            <section id="services" class="section-content color1 animate__animated animate__slideInUp">
+            <section id="skills" class="section-content color1" data-aos="fade-up"> 
+                <div class="row2">
+                    <div class = "counter-cont">
+                        <div class = "counter">
+                            <span id = "value">0</span>%
+                        </div>
+                        <span>WordPress</span>
+                    </div>
+                    <div class = "counter-cont">
+                        <div class = "counter">
+                            <span id = "value2">0</span>%
+                        </div>
+                        <span>Photoshop</span>
+                    </div>
+                    <div class = "counter-cont">
+                        <div class = "counter">
+                            <span id = "value3">0</span>%
+                        </div>
+                        <span>HTML & CSS</span>
+                    </div>
+                    <div class = "counter-cont">
+                        <div class = "counter">
+                            <span id = "value4">0</span>%
+                        </div>
+                        <span>jQuery</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-content color1" id="services" data-aos="fade-up">
                 <h3 class="section-header">Services</h3>
                 <div class="spacer" data-height="80"></div>
                 <div class="row">
@@ -178,23 +205,21 @@
                     </div>
                 </div>
             </section>
-
-            <section id="contact" class="section-content color1 animate__animated animate__slideInUp">
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                <script>
-                hbspt.forms.create({
-                    region: "na1",
-                    portalId: "22212585",
-                    formId: "4e30f6e8-2abe-41c0-916c-58d451aaa640"
-                });
-                </script>
+            
+            <section id="contact" class="section-content color1" data-aos="fade-up">
+                
             </section>
         </div>
     </article> 
 
     <footer>Created using HTML5, CSS3, and JQuery - Copyright 2022</footer>
 </div>
-</body>
- 
 
+<!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/70d221b9fe.js" crossorigin="anonymous"></script>
+<script type = "text/javascript" src="js/script.js"></script>  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
 </html>

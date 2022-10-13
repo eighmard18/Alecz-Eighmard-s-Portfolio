@@ -148,7 +148,7 @@ ul.vertical-menu.scrollspy {
     float: right;
     margin-top: 50px;
     padding: 80px 50px;
-    width: auto;
+    width: 775.5px;
     transform: translateX(0);
     transition: all 0.3s ease-in-out;
     background: rgba( 255, 255, 255, 0.25 );
@@ -161,7 +161,6 @@ ul.vertical-menu.scrollspy {
 
 .color1,
 .color2 {
-    /* background: #ECDBBA; */
     color: #191919;
 }
 
@@ -171,14 +170,20 @@ section.dark , header.dark , button.dark {
 }
 
 .dark .service-item{
-    border: 2px solid #ECDBBA !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 .dark .service-item:hover {
-    border: 2px solid #C84B31 !important;
+    border-radius: 20px;
+    box-shadow: inset 41px 41px 82px #bebebe5c, inset -41px -41px 82px #ffffff30 !important;
 }
 
-.dark a {
+
+.dark nav a {
+    color: #ECDBBA !important;
+}
+
+.dark a.mybutton {
     border: 1px solid #C84B31 !important;
 }
 
@@ -307,7 +312,7 @@ footer {
     padding-top: 20px;
     display:  flex;
     flex-wrap:  wrap;
-    justify-content: space-between;;
+    justify-content: space-between;
 }
     
 .service-cont {
@@ -323,11 +328,11 @@ footer {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 40px;
     border-radius: 20px;
-    transition: 300ms ease;
+    transition: 600ms ease;
 }
 
 .service-item.text-center:hover {
-    box-shadow:none;
+    box-shadow: none;
 }
 
 /*SWITCH*/
@@ -371,7 +376,7 @@ footer {
     position: absolute;
     top: 4px;
     left: 4px;
-    transition: transform 300ms, background-color 300ms;
+    transition: ease 300ms,
 }
 
 input:checked + .slider {
@@ -393,6 +398,37 @@ input:checked + .slider::before {
 i.fa-solid {
     font-size: 40px;
 }
+
+
+/*SKILLS*/
+section#skills {
+    color: #ffffff;
+    background: #4A63E7;
+}
+
+section#skills .counter-cont {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#skills .row2 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.counter-cont .counter > span {
+    font-weight: 700;
+    font-size: 78px;
+}
+
+.counter-cont > span {
+    font-size: 24px;
+}
+/*END SKILLS*/
 
 @media all and (max-width: 980px) {
     .main-content,
