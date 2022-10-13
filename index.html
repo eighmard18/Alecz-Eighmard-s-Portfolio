@@ -24,27 +24,27 @@
     </div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "104457607996076");
-      chatbox.setAttribute("attribution", "biz_inbox");
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "104457607996076");
+        chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v15.0'
+            });
+        };
 
-      (function(d, s, id) {
+        (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <div class = "body-container">
@@ -57,9 +57,6 @@
         <label class="switch">
             <input type="checkbox" id = "switchmode">
             <span class="slider"></span>
-            <script>
-                
-            </script>
         </label>
     </div>
 
@@ -91,7 +88,7 @@
                         I'm Alecz Eighmard 
                     </h1>
                     <p>
-                        My area of expertise is responsive website strategy, design, and development. I create beautiful, semantic HTML & CSS using skills I learned from self-study. However, my interests go far beyond the web, and I enjoy assisting people with marketing plans and branding.
+                        My area of expertise is responsive website strategy, design, and development. I create beautiful, semantic HTML & CSS using skills I learned from self-study. However, my interests go far beyond the web, and I enjoy assisting people with marketing plans and branding.
                     </p>
                     
                     <div class = "btn-container">
@@ -181,11 +178,23 @@
                     </div>
                 </div>
             </section>
+
+            <section id="contact" class="section-content color1 animate__animated animate__slideInUp">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "22212585",
+                    formId: "4e30f6e8-2abe-41c0-916c-58d451aaa640"
+                });
+                </script>
+            </section>
         </div>
     </article> 
 
     <footer>Created using HTML5, CSS3, and JQuery - Copyright 2022</footer>
 </div>
 </body>
+ 
 
 </html>

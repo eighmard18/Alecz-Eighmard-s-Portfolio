@@ -85,6 +85,10 @@ ul.vertical-menu.scrollspy {
     height: 16px;
 }
 
+.menu.float-left li {
+    transition: 600ms ease;
+}
+
 .menu.float-left li:hover{
     transform: translateX(10px);
     transition: 600ms ease;
@@ -99,7 +103,8 @@ ul.vertical-menu.scrollspy {
 }
 
 .menu.float-left .active a {
-    text-shadow: 0px 3px 21px rgba(200,75,49,1);
+    text-decoration: underline;
+    font-weight: bold;
 }
 /*END MENU*/
 
